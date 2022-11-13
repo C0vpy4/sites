@@ -1,0 +1,206 @@
+*, ::before, ::after{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: 'Montserrat', sans-left;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+h1,h2,h3{
+	margin:0;
+}
+
+
+.header{
+	width: 100%;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 300;
+	color: gray;
+}
+
+.header_logo{
+	color: inherit;
+	text-decoration: none;
+}
+
+.hero{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	max-width: 1230px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.hero_container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+	grid-gap: 20px;
+}
+
+.hero_about{
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+}
+
+.hero_title{
+	margin-bottom: :20px;
+	font-size: 48px;
+	line-height: 1.1;
+}
+
+.hero_subtitle{
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.hero_links{
+	display: flex;
+	justify-content: center;
+	text-shadow:
+    1px 1px 1px #da05e1,
+    1px 1px 1px #da05e1,
+    -1px 1px 1px #da05e1,
+    -1px -1px 1px #da05e1,
+    -2px -2px 0 #da05e1;
+ 
+    transition: all 1s;
+}
+
+.hero_link{
+	margin-right: 10px;
+
+	font-size: 30px;
+	padding-right: 5px;
+	color: black;
+
+	transition: color 0.3s;
+}
+
+.hero_link:after{
+	content: "";
+    display: block;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    margin: auto;
+    border-bottom: 3px solid black;
+    bottom: .15em;
+    transition: all 1s;
+}
+.hero_link:hover{
+	text-shadow:
+    -1px 1px 1px #da05e1,
+    -1px 1px 1px #da05e1,
+    1px 1px 1px #da05e1,
+    1px 1px 1px #da05e1,
+    2px 2px 0 #da05e1;
+    transition: all 1s;
+}
+
+.hero_link:hover:after{
+	width: 0%;
+    border-bottom-width: 1px;
+}
+
+.hero_box{
+	max-width: 500px;
+	justify-content: center;
+	overflow: hidden;
+
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    animation: ava-animate 5s infinite alternate;
+	border: 10px solid #fff;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5)
+}
+
+.hero_box_img{
+	animation: ava-bg 3s infinite alternate;
+}
+
+@media screen and (max-width: 978px) {
+	.hero {
+		padding-top: 30px;
+	}
+
+	.hero_container{
+		grid-row-gap: 20px;
+	}
+
+	.hero-title{
+		font-size: 28px;
+		margin-bottom: 10px;
+	}
+
+	.hero_subtitle{
+		font-size: 22px;
+		font-weight: 400;
+	}
+
+	.hero_description{
+		font-size: 14px;
+	}
+
+	.hero_about{
+		text-align: center;
+	}
+
+	.hero_links{
+		justify-content: center;
+	}
+
+	.hero_box{
+		max-width: 350px;
+
+	}
+}
+
+@keyframes ava-animate{
+	0% {
+		border-radius: 55% 45% 60% 40% / 0% 88% 12% 100% ;
+	}
+
+	40% {
+		border-radius: 79% 21% 40% 60% / 35% 44% 56% 65% ;
+	}
+
+	60% {
+		border-radius: 13% 87% 55% 45% / 46% 18% 82% 54% ;
+	}
+
+	100% {
+		border-radius: 23% 77% 24% 76% / 66% 45% 55% 34% 
+	}
+}
+
+@keyframes ava-bg{
+	from {
+		backgrop-filter: hue-rotate(0);
+	}
+	to{
+		backgrop-filter: hue-rotate(90deg);
+	}
+}
+
+@keyframes text-glich{
+	0% {
+		text-shadow: -1px 1px 1px #da05e1;
+	}
+	5%{
+		text-shadow: 1px 1px 1px #da05e1,
+	}
+}
