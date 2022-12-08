@@ -119,7 +119,7 @@ body{
 .inputBox{
 	position: relative;
 	width: 400px;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .inputBox input{
@@ -198,7 +198,7 @@ input[type="submit"]{
 	padding: 11px 20px;
 	width: 200px;
     margin-left: 28%;
-	margin-top: 70px;
+	margin-top: 10px;
 	border-radius: 4px;
 	font-weight: 600;
 	cursor: pointer;
@@ -223,10 +223,13 @@ i{
 
 @keyframes animBg{
 	0%{
-		filter: hue-rotate(0deg);
+		background: #FF1493;
 	}
-	100%{
-		filter: hue-rotate(360deg);
+	50%{
+		background: #32CD32;
+	}
+    100%{
+		background: #45f3ff ;
 	}
 }
 

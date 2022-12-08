@@ -1,0 +1,8 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+.box{
+    padding: 20%;
+    background: red;
+}
