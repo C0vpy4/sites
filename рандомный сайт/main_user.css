@@ -2,7 +2,59 @@
     box-sizing: border-box;
 }
 
+body{
+    min-height: 100vh;
+    background: url(bg.jpg) no-repeat;
+    /* background: rgb(25, 215, 107); */
+}
+
 .box{
-    padding: 20%;
-    background: red;
+    position: relative;
+}
+
+.head{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    position: fixed;
+    width: auto;
+    height: 200px;
+}
+
+.nothing{
+    width: 700px;
+}
+
+.icons{
+    width: 150px;
+    height: inherit;
+}
+
+.search{
+    width: 150px;
+    height: inherit;
+}
+
+span{
+    padding: 0 0 0 9px;
+    width: auto;
+    height: auto;
+}
+
+/*Blok Search*/
+.blok{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: inherit;
+    background: black;
+    border-radius: 7px;
+}
+
+.blok_search{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 25px;
+    width: inherit;
+    background: blue;
+    border-radius: inherit;
 }
