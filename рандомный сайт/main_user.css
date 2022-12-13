@@ -3,58 +3,72 @@
 }
 
 body{
-    min-height: 100vh;
-    background: url(bg.jpg) no-repeat;
-    /* background: rgb(25, 215, 107); */
+    background:url(bg.jpg) no-repeat;
 }
 
-.box{
+nav{
+    margin-left: 20px;
     position: relative;
-}
-
-.head{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    position: fixed;
-    width: auto;
-    height: 200px;
-}
-
-.nothing{
-    width: 700px;
-}
-
-.icons{
-    width: 150px;
-    height: inherit;
-}
-
-.search{
-    width: 150px;
-    height: inherit;
-}
-
-span{
-    padding: 0 0 0 9px;
-    width: auto;
-    height: auto;
-}
-
-/*Blok Search*/
-.blok{
     display: flex;
-    align-items: center;
-    height: 50px;
-    width: inherit;
-    background: black;
-    border-radius: 7px;
 }
 
-.blok_search{
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 25px;
-    width: inherit;
-    background: blue;
-    border-radius: inherit;
+nav a{
+    position: relative;
+    margin: 8px 20px 0 60px;
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
 }
+
+.href{
+    display: flex;
+    justify-content: center;
+    width: 2000px;
+    background:rgb(122, 56, 212);
+    border-radius: 5px;
+}
+
+nav .marker {
+    left: 0;
+    position: absolute;
+    height: 4px;
+    width: 0;
+    background: #000;
+    bottom: -1px;
+    transition: 0.5s;
+    border-radius: 4px
+}
+
+.out{
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    width: 500px;
+    height: 45px;
+    position: relative;
+    background: rgb(122, 56, 212);
+    border-radius: 5px;
+}
+
+.main_search{
+    border-radius: 5px;
+    margin-top: 6.725px;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    background: rgb(122, 200, 45);
+}
+
+input{
+    position: relative;
+    font-weight: bold;
+    margin-top: 0px;
+    height: inherit;
+    width: inherit;
+    opacity: 0.33;
+}
+
+.icon_search{
+}
+
+/* https://9elements.github.io/fancy-border-radius/#36.9.71.37--. */
