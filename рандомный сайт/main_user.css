@@ -68,7 +68,141 @@ input{
     opacity: 0.33;
 }
 
-.icon_search{
+span{
+    position: absolute;
+	left: 0;
+	padding: 5px 5px 10px;
+	font-size: 1em;
+	color: #8f8f8f;
+	pointer-events: none;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+}
+
+input:valid ~ span,
+input:focus ~ span{
+    color: #45f3ff;
+	transform: translateX(-90px) translateY(-3px);
+    font-size: 20px;
 }
 
 /* https://9elements.github.io/fancy-border-radius/#36.9.71.37--. */
+
+.main{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.profile{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container_grid{
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    grid-template-areas: 
+    "A A A A   A A A A   C C C C"
+    "B B B B   B B B B   B B B B"
+    "B B B B   B B B B   B B B B";
+}
+
+.name{
+    grid-area: A;
+    margin-left: 50px;
+    background-color: rgb(122, 56, 212);;
+    height: 300px;
+    width: 600px;
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-areas: 
+    "A A A A  A A A A   A A A A"
+    "B B B B  B B B B   B B B B"
+    ;
+}
+
+.fio{
+    display: flex;
+    justify-content: center;
+    grid-area: A;
+    border-radius: 4px;
+}
+
+.back{
+    background-color: #16d9e3;
+    margin-top: 5%;
+    width: 80%;
+    height: 60%;
+    border-radius: 4px;
+}
+
+.about_man{
+    grid-area: B;
+    display: flex;
+    justify-content: center;
+}
+
+.about{
+    grid-area: B;
+}
+
+text{
+    font-size: 5px;
+}
+
+.icon{
+    grid-area: C;
+    display: flex;
+    height: 300px;
+    max-width: 400px;
+    justify-content: center;
+	overflow: hidden;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    animation: ava-animate 3s infinite alternate;
+    border: 10px solid #fff;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5)
+}
+
+@keyframes ava-animate{
+	0% {
+		border-radius: 55% 45% 60% 40% / 0% 88% 12% 100% ;
+	}
+
+	40% {
+		border-radius: 79% 21% 40% 60% / 35% 44% 56% 65% ;
+	}
+
+	60% {
+		border-radius: 13% 87% 55% 45% / 46% 18% 82% 54% ;
+	}
+
+	100% {
+		border-radius: 23% 77% 24% 76% / 66% 45% 55% 34% 
+	}
+}
+
+.img{
+    animation: ava-bg 3s infinite alternate;
+}
+
+@keyframes ava-bg{
+	from {
+		backgrop-filter: hue-rotate(0);
+	}
+	to{
+		backgrop-filter: hue-rotate(90deg);
+	}
+}
