@@ -1,9 +1,10 @@
 *, ::before, ::after{
     box-sizing: border-box;
 }
-
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust */
 body{
     background:url(bg.jpg) no-repeat;
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav{
@@ -13,10 +14,10 @@ nav{
 }
 
 nav a{
+    color: #8f8f8f;
     position: relative;
     margin: 8px 20px 0 60px;
     font-size: 25px;
-    color: #000;
     text-decoration: none;
 }
 
@@ -24,7 +25,7 @@ nav a{
     display: flex;
     justify-content: center;
     width: 2000px;
-    background:rgb(122, 56, 212);
+    background:#28292d;
     border-radius: 5px;
 }
 
@@ -33,10 +34,27 @@ nav .marker {
     position: absolute;
     height: 4px;
     width: 0;
-    background: #000;
+    background: #0000FF;
     bottom: -1px;
     transition: 0.5s;
-    border-radius: 4px
+    border-radius: 4px;
+    animation: mrBg 6s infinite alternate;
+}
+
+@keyframes mrBg{
+    0%{
+        background: #C71585;
+    }
+    35%{
+        background: #00FFFF;
+    }
+    60%{
+        background: #FF4500;
+    }
+    100%{
+        background: #008000;
+    }
+
 }
 
 .out{
@@ -46,7 +64,7 @@ nav .marker {
     width: 500px;
     height: 45px;
     position: relative;
-    background: rgb(122, 56, 212);
+    background: #28292d;
     border-radius: 5px;
 }
 
@@ -56,7 +74,7 @@ nav .marker {
     width: 100px;
     height: 30px;
     position: relative;
-    background: rgb(122, 200, 45);
+    background: #8f8f8f;
 }
 
 input{
@@ -68,7 +86,7 @@ input{
     opacity: 0.33;
 }
 
-span{
+span[class="search"]{
     position: absolute;
 	left: 0;
 	padding: 5px 5px 10px;
@@ -79,11 +97,29 @@ span{
 	transition: 0.5s;
 }
 
+
+
+@keyframes spCl{
+    0%{
+        color: #FF4500;
+    }
+    35%{
+        color: #FF1493;
+    }
+    60%{
+        color: #FF00FF;
+    }
+    100%{
+        color: #20B2AA;
+    }
+}
+
 input:valid ~ span,
 input:focus ~ span{
-    color: #45f3ff;
+    color: #20B2AA;
 	transform: translateX(-90px) translateY(-3px);
     font-size: 20px;
+    animation: spCl 5s infinite alternate;
 }
 
 /* https://9elements.github.io/fancy-border-radius/#36.9.71.37--. */
@@ -119,10 +155,10 @@ input:focus ~ span{
     "B B B B   B B B B   B B B B";
 }
 
-.name{
+.human{
     grid-area: A;
     margin-left: 50px;
-    background-color: rgb(122, 56, 212);;
+    background-color: #28292d;;
     height: 300px;
     width: 600px;
     border-radius: 4px;
@@ -142,9 +178,79 @@ input:focus ~ span{
 }
 
 .back{
-    background-color: #16d9e3;
+    background-color: #8f8f8f;
     margin-top: 5%;
     width: 80%;
+    height: 60%;
+    border-radius: 4px;
+}
+
+.shadow{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 1rem crimson);
+    animation: blBg 5s infinite alternate;
+}
+
+.blur{
+    width:  100%;
+    height: 100%;
+    background: #FFFFFF;
+    opacity: 0.33;
+    filter: blur(9px);
+    filter: contrast(1.75);
+}
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness */
+@keyframes blBg{
+    0%{
+        filter: drop-shadow(0 0 1rem #C71585);
+    }
+    35%{
+        filter: drop-shadow(0 0 1.2rem #00FFFF);
+    }
+    60%{
+        filter: drop-shadow(0 0 1.3rem #FF4500);
+    }
+    100%{
+        filter: drop-shadow(0 0 1.5rem #008000);
+    }
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container_form{
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-areas: 
+    "A A A A  A A A A   A A A A"
+    "B B B B  B B B B   B B B B"
+    ;
+}
+
+span[class="form_name"]{
+    margin-top: 20px;
+    text-align: center;
+    grid-area: A;
+    font-size: 40px;
+}
+
+span[class="form_surname"]{
+    text-align: center;
+    grid-area: B;
+    font-size: 20px;
+}
+
+.back2{
+    background-color: #8f8f8f;
+    margin-top: 5%;
+    width: 90%;
     height: 60%;
     border-radius: 4px;
 }
@@ -153,6 +259,52 @@ input:focus ~ span{
     grid-area: B;
     display: flex;
     justify-content: center;
+}
+
+.container_form2{
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-areas: 
+    "A A A A  C C C C   E E E E "
+    "B B B B  D D D D   F F F F "
+    ;
+}
+
+span[class="city"]{
+    font-size: 20px;
+    margin: 8px 0 0 50px;
+    grid-area: A;
+}
+
+span[class="region"]{
+    font-size: 20px;
+    margin: 0 0 0 50px;
+    grid-area: B;
+}
+
+span[class="age"]{
+    font-size: 20px;
+    margin: 8px 0 0 10px;
+    grid-area: C;
+}
+
+span[class="bth"]{
+    font-size: 20px;
+    margin: 0 0 0 10px;
+    grid-area: D;
+}
+
+span[class="male"]{
+    font-size: 20px;
+    margin: 8px 0 0 10px;
+    grid-area: E;
+}
+
+span[class="raiting"]{
+    font-size: 20px;
+    margin: 0 0 0 10px;
+    grid-area: F;
 }
 
 .about{
@@ -173,7 +325,7 @@ text{
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
     animation: ava-animate 3s infinite alternate;
     border: 10px solid #fff;
-	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5)
+	box-shadow: 10px 10px 10px #00FFFF;
 }
 
 @keyframes ava-animate{
@@ -196,6 +348,7 @@ text{
 
 .img{
     animation: ava-bg 3s infinite alternate;
+    filter: contrast(1.75);
 }
 
 @keyframes ava-bg{
@@ -206,3 +359,6 @@ text{
 		backgrop-filter: hue-rotate(90deg);
 	}
 }
+
+
+
