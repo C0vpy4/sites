@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    background-color: #0f1021;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    max-width: 1000px;
+    height: 100px;
+    margin-bottom: 50%;
+}
+
+.back{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    background-color: #333336;
+    height: 110px;
+    border-radius: 8px;
+
+    font-family: Quicksand;
+}
+
+.ico{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+}
+
+.ico img{
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.ico:hover{
+    border: solid black 2px;
+    border-radius: 8px;
+}
+
+.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    margin-left: 35%;
+}
+
+@media screen and (min-width:200px) and (max-width:1024px) {
+    nav{
+        min-width: auto;
+    }
+}
+
