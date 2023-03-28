@@ -3,7 +3,7 @@
 <h3 align="center">Я из России 🇷🇺</h3>
 
 ![Логотип](https://s9.travelask.ru/uploads/post/000/025/923/main_image/full-2af6fc8c8210d9ac04b6f99f426b45bd.jpg "Логотип Github")
-<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/[ICON SLUG].svg" />
+<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/simpleicons.svg" />
 
 Краткое описание:
 Проек создан для дальнейшего использования в виде шаблона
