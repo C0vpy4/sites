@@ -17,7 +17,41 @@
  Как использовать:
   1. Откройте проект
   2. Отредактируйте файл lilpap`s.html под себя
-  ![image](https://user-images.githubusercontent.com/100491011/228172477-e8e43914-8b52-4539-85a8-9b59cef046b0.png)
+  <<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container-head">
+            <div class="container">
+                <div class="shadow">
+                    <div class="blur">
+                        <div class="main">
+                            <div class="logo">
+                                <img src="иконка.jpg" alt="">
+                            </div>
+                            <div class="name">Lilpap`s</div>
+                            <div class="search">
+                                <div class="back">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+
+    </footer>
+
+
+</html>
+>
   3. Если не нравится оформление отредактируйте файл styles.css                                                                                              
  
  ![image](https://user-images.githubusercontent.com/100491011/228173491-b14aab05-d325-4833-b688-04a02c216550.png)
