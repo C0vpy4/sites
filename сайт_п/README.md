@@ -16,5 +16,5 @@
   2. Отредактируйте файл lilpap`s.html под себя
   ![image](https://user-images.githubusercontent.com/100491011/228172477-e8e43914-8b52-4539-85a8-9b59cef046b0.png)
   3. Если не нравится оформление отредактируйте файл styles.css
- ![image](https://user-images.githubusercontent.com/100491011/228172970-0d5d3c49-9451-40ba-af89-15e502e18454.png)
+ ![image](https://user-images.githubusercontent.com/100491011/228173491-b14aab05-d325-4833-b688-04a02c216550.png)
 
