@@ -1,9 +1,9 @@
-<h1 align="center">Привет я <a href="https://daniilshat.ru/" target="_blank">C0vpy4</a> 
+<h1 align="center">Привет я <a href="https://github.com/C0vpy4" target="_blank">C0vpy4</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">Я из России 🇷🇺</h3>
 
 ![Логотип](https://s9.travelask.ru/uploads/post/000/025/923/main_image/full-2af6fc8c8210d9ac04b6f99f426b45bd.jpg "Логотип Github")
-https://img.shields.io/badge/codeship/:projectId 
+<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/[ICON SLUG].svg" />
 
 Краткое описание:
 Проек создан для дальнейшего использования в виде шаблона
