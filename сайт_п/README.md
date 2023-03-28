@@ -17,7 +17,7 @@
  Как использовать:
   1. Откройте проект
   2. Отредактируйте файл lilpap`s.html под себя
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
