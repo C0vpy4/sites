@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(95, 46, 26);
+}
+
+.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    animation: 2s text ease infinite alternate;
+}
+
+@keyframes text {
+    0%{}
+    100%{
+        color: red;
+    }
+}
+
+.main{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.person{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 340px;
+    height: auto;
+    border: 2px solid black;
+}
+
+
+
+
+img{
+    position: absolute;
+    margin-top: 3px;
+    padding: 0 20px;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+}
+
+.two{
+    margin-left: 120px; 
+}
+
+#reshetka{
+    z-index: 1;
+    visibility: hidden;
+    margin-top: -100px;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    margin-top: 50%;
+}
