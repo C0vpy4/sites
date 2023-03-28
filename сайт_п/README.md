@@ -52,25 +52,7 @@
 
 </html>>
 
-  3. Если не нравится оформление отредактируйте файл styles.css
-< body{
-    min-height: 100vh;
-    background-color: #696969;
-}
 
-.container-head{
-    width: 100%;
-    height: 110px;
-}
-
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 110px;
-    background-color: #696969;
-}>
 
 
 
